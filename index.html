@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>createElement</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+       <p>I'm Ready <b id="big">Spongebob</b> </p> 
+    
+       <input type="button" onclick="changeText()" value="Change Text">
+
+
+
+
+
+       <p>I'm ready for <b id="stuff"> Krabby Pattylksdfjlsdfjlkdfj;wfwlefjwlekf;wefj Pizza!</b> </p> 
+
+       <input type="text" id="userInput" value="Enter text here">
+
+       <input type="button" onclick="diffText()" value="Change Text">
+
+
+       <p id='para'>Welcome to the site <b id='boldStuff3'>Earthling</b> </p> 
+       <input type='button' onclick='changeText3()' value='Change Text'/>
+
+
+
+
+
+        <!-- <script src="main.js"></script>
+
+        <script type="text/javascript">
+          function changeText(){
+             document.getElementById("big").innerHTML = 'Patrick'; 
+          }  
+        </script> -->
+
+        <script type="text/javascript">
+            function diffText(){
+        var userInput = document.getElementById('userInput').value;
+        document.getElementById('stuff').innerHTML = userInput;
+            }
+        </script>
+
+        <script>
+           
+        function changeText3(){
+            var oldHTML = document.getElementById('para').innerHTML;
+            var newHTML = "<span style='color:red'>" + oldHTML + "</span>";
+            document.getElementById('para').innerHTML = newHTML;
+}
+
+        </script>
+       
+    </body>
+</html>
